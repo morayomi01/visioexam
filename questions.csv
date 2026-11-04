@@ -1,0 +1,4 @@
+id,exam_id,type,body,option_a,option_b,option_c,option_d,correct,language,position
+q001,exam001,mcq,What is the capital of Nigeria?,Lagos,Abuja,Kano,Ibadan,Abuja,en,1
+q002,exam001,mcq,Which planet is closest to the sun?,Earth,Mars,Mercury,Venus,Mercury,en,2
+q003,exam001,mcq,What does CPU stand for?,Central Processing Unit,Computer Power Unit,Central Power Usage,Core Processing Unit,Central Processing Unit,en,3

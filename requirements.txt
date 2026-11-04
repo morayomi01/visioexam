@@ -1,0 +1,32 @@
+# VisioExam — Python dependencies
+# Install: pip install -r requirements.txt
+PyQt6>=6.6.0
+louis
+hid>=1.0.4  
+cryptography>=42.0.0
+bcrypt>=4.1.0
+psutil>=5.9.0
+pytest>=8.0.0
+pytest-qt>=4.4.0
+pyinstaller>=6.0.0
+
+# --- MMS-TTS (Yoruba / Hausa neural TTS via transformers — eSpeak-NG has
+#     no voice data for these languages at all). ---
+transformers>=4.40.0
+torch>=2.2.0
+sounddevice>=0.4.6
+numpy>=1.26.0
+
+# --- YarnGPT-local (Igbo neural TTS — Meta never published an Igbo
+#     MMS-TTS checkpoint, so Igbo uses a different, purpose-built model
+#     instead). Pure transformers-based, no compiler needed. Also
+#     requires a one-time manual step — see core/yarngpt_igbo_backend.py
+#     docstring: git clone https://github.com/saheedniyi02/yarngpt.git
+#     into vendor/yarngpt ---
+outetts==0.2.3
+uroman
+gdown
+
+# --- Required at runtime for production database encryption ---
+# Prebuilt SQLCipher binding, including Windows wheels for supported Python versions.
+sqlcipher3-wheels==0.5.7
